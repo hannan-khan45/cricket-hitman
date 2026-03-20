@@ -1,111 +1,90 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<title>Cricket Stadiums</title>
-
-
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="layout.css">
-<link rel="stylesheet" href="animation.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Stadiums</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="animation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <header class="navbar">
-
-<div class="logo">🏏 Cricket Universe</div>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="rohit.html">Rohit Sharma</a>
-<a href="mumbai.html">Mumbai Indians</a>
-<a href="stadium.html">Stadium</a>
-<a href="jamia.html">Jamia</a>
-<a href="live.html">Live Match</a>
-</nav>
-
+  <div class="logo">🏏 Cricket Universe</div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="rohit.html">Rohit Sharma</a>
+    <a href="mumbai.html">Mumbai Indians</a>
+    <a href="stadium.html">Stadium</a>
+    <a href="jamia.html">Jamia</a>
+    <a href="live.html">Live Match</a>
+  </nav>
 </header>
 
+<section class="profile fade-in">
+  <h1>Famous Cricket Stadiums</h1>
+  <p>Explore some of the most iconic cricket stadiums around the world.</p>
 
+  <div class="gallery">
+    <img src="images-all/The-Gabba.jpg" alt="The Gabba">
+    <img src="images-all/The_Eden_Gardens.jpg" alt="Eden Gardens">
+    <img src="images-all/lords.jpg" alt="Lord's Cricket Ground">
+    <img src="images-all/Wankhede.jpg" alt="Wankhede Stadium">
+    <img src="images-all/cricket-ground.jpg" alt="Melbourne Cricket Ground">
+    <img src="images-all/Eden-Park.jpg" alt="Eden park">
+  
+  </div>
 
-<section class="profile">
-
-<h1>Famous Cricket Stadiums</h1>
-
-<p>
-
-Explore some of the most iconic cricket stadiums around the world.
-
-</p>
-
-<div class="gallery">
-
-<img src="images-all/The-Gabba.jpg">
-<img src="images-all/The_Eden_Gardens.jpg">
-<img src="images-all/lords.jpg">
-<img src="images-all/Wankhede.jpg">
-
-</div>
-
-<h2>Popular Stadiums</h2>
-
-<ul>
-<li>Wankhede Stadium - Mumbai</li>
-<li>Eden Gardens – Kolkata</li>
-<li>Melbourne Cricket Ground – Australia</li>
-<li>Lords Cricket Ground – England</li>
-</ul>
-
+  <h2>Popular Stadiums</h2>
+  <ul>
+    <li>🏟️ Wankhede Stadium – Mumbai, India</li>
+    <li>🏟️ Eden Gardens – Kolkata, India</li>
+    <li>🏟️ Melbourne Cricket Ground – Australia</li>
+    <li>🏟️ Lord's Cricket Ground – England</li>
+    <li>🏟️ The Gabba – Brisbane, Australia</li>
+    <li>🏟️ Eden Park – Auckland, New Zealand</li>
+  </ul>
 </section>
-<script src="main.js"></script>
-<script src="live score.js"></script>
-<script src="comment.js"></script>
 
 <footer class="footer">
-
-<div class="footer-container">
-
-<div class="footer-section">
-
-<h3>Cricket Universe</h3>
-
-<p>A fan website dedicated to Rohit Sharma and the world of cricket.</p>
-
-</div>
-
-<div class="footer-section">
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-<a href="rohit.html">Rohit Sharma</a>
-<a href="mumbai.html">Mumbai Indians</a>
-<a href="stadium.html">Stadium</a>
-<a href="jamia.html">Jamia</a>
-
-</div>
-
-<div class="footer-section">
-
-<h3>Project Info</h3>
-
-<p>B.Tech Cloud Computing Project</p>
-<p>Created by: Hannan</p>
-<p>Year: 2026</p>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-
-<p>© 2026 Cricket Universe | Educational Project Only</p>
-
-</div>
-
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Cricket Universe</h3>
+      <p>A fan website dedicated to Rohit Sharma and the world of cricket.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="rohit.html">Rohit Sharma</a>
+      <a href="mumbai.html">Mumbai Indians</a>
+      <a href="stadium.html">Stadium</a>
+      <a href="jamia.html">Jamia</a>
+      <a href="live.html">Live Match</a>
+    </div>
+    <div class="footer-section">
+      <h3>Project Info</h3>
+      <p>B.Tech Cloud Computing Project</p>
+      <p>Created by: Hannan</p>
+      <p>Year: 2026</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Cricket Universe | Educational Project Only</p>
+  </div>
 </footer>
+
+<script src="main.js"></script>
+<script src="liveScore.js"></script>
+<script src="comment.js"></script>
+<script>
+  document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('mainNav').classList.toggle('open');
+  });
+</script>
 </body>
 </html>

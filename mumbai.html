@@ -2,100 +2,96 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mumbai Indians</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="animation.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mumbai Indians</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="animation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="navbar">
+  <header class="navbar">
+    <div class="logo">🏏 Mumbai Indians</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="rohit.html">Rohit Sharma</a>
+      <a href="mumbai.html">Mumbai Indians</a>
+      <a href="stadium.html">Stadium</a>
+      <a href="jamia.html">Jamia</a>
+      <a href="live.html">Live Match</a>
+    </nav>
+  </header>
 
-        <h2 class="logo">Mumbai Indians</h2>
+  <section class="profile fade-in">
+    <h1>Mumbai Indians – IPL Champions</h1>
+    <p>Mumbai Indians (MI) are one of the most successful Indian Premier League (IPL) franchises,
+      having won five titles
+      (2013, 2015, 2017, 2019, 2020) under captain Rohit Sharma</p>
+    <p>The team’s success is mainly due to its strong core players. Rohit Sharma, the captain, led MI to multiple
+      championships and scored over 7000 runs. Jasprit Bumrah is the team’s leading bowler, known for his deadly yorkers
+      and excellent performance in death overs.
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="rohit.html">Rohit Sharma</a>
-            <a href="stadium.html">Stadiums</a>
-            <a href="jamia.html">Jamia</a>
-            <a href="live.html">Live Match</a>
-        </nav>
+      Kieron Pollard played a crucial role as a finisher with his powerful hitting and all-round abilities. Lasith
+      Malinga, one of the greatest bowlers in IPL history, took more than 170 wickets and delivered match-winning
+      performances, including the 2019 final.</p>
+    <div class="gallery">
+      <img src="images-all/mumbai-indians-crictoday.jpg" alt="Mumbai Indians">
+      <img src="images-all/Wankhede.jpg" alt="Wankhede Stadium">
+      <img src="images-all/images.jpeg" alt="Mumbai Indians">
+      <img src="images-all/IPL-MI-2021.jpg" alt="Mumbai Indians">
+    </div>
 
-    </header>
+    <h2>IPL Titles</h2>
+    <ul>
+      <li>🏆 2013</li>
+      <li>🏆 2015</li>
+      <li>🏆 2017</li>
+      <li>🏆 2019</li>
+      <li>🏆 2020</li>
+    </ul>
+  </section>
 
-    <section class="profile fade-in">
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Cricket Universe</h3>
+        <p>A fan website dedicated to Rohit Sharma and the world of cricket.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="rohit.html">Rohit Sharma</a>
+        <a href="mumbai.html">Mumbai Indians</a>
+        <a href="stadium.html">Stadium</a>
+        <a href="jamia.html">Jamia</a>
+        <a href="live.html">Live Match</a>
+      </div>
+      <div class="footer-section">
+        <h3>Project Info</h3>
+        <p>B.Tech Cloud Computing Project</p>
+        <p>Created by: Hannan</p>
+        <p>Year: 2026</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Cricket Universe | Educational Project Only</p>
+    </div>
+  </footer>
 
-        <h1>Mumbai Indians – IPL Champions</h1>
-
-        <p>
-            Mumbai Indians is the most successful franchise in IPL history.
-            Under Rohit Sharma's captaincy the team won multiple championships.
-        </p>
-
-        <div class="gallery">
-
-            <img src="images-all/mumbai-indians-crictoday.jpg">
-            <img src="images-all/Wankhede.jpg">
-            <img src="images-all/images.jpeg">
-
-        </div>
-
-        <h2>IPL Titles</h2>
-
-        <ul class="styled-list">
-            <li>2013</li>
-            <li>2015</li>
-            <li>2017</li>
-            <li>2019</li>
-            <li>2020</li>
-        </ul>
-
-    </section>
-
-    <script src="main.js"></script>
-    <script src="liveScore.js"></script>
-    <script src="comment.js"></script>
-
-    <footer class="footer">
-
-        <div class="footer-container">
-
-            <div class="footer-section">
-                <h3>Cricket Universe</h3>
-                <p>A fan website dedicated to Rohit Sharma and the world of cricket.</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <a href="index.html">Home</a>
-                <a href="rohit.html">Rohit Sharma</a>
-                <a href="mumbai.html">Mumbai Indians</a>
-                <a href="stadium.html">Stadium</a>
-                <a href="jamia.html">Jamia</a>
-            </div>
-
-            <div class="footer-section">
-                <h3>Project Info</h3>
-                <p>B.Tech Cloud Computing Project</p>
-                <p>Created by: Hannan</p>
-                <p>Year: 2026</p>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 Cricket Universe | Educational Project Only</p>
-        </div>
-
-    </footer>
-
+  <script src="main.js"></script>
+  <script src="liveScore.js"></script>
+  <script src="comment.js"></script>
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function () {
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>

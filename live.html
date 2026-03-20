@@ -1,106 +1,77 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Live Cricket Match</title>
-
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="layout.css">
-<link rel="stylesheet" href="animation.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Cricket Match</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="animation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <header class="navbar">
-
-<div class="logo">🔴 Live Cricket</div>
-
-<nav>
-
-<a href="index.html">Home</a> <a href="rohit.html">Rohit Sharma</a> <a href="mumbai.html">Mumbai Indians</a> <a href="stadium.html">Stadium</a> <a href="jamia.html">Jamia</a>
-
-</nav>
-
+  <div class="logo">🔴 Live Cricket</div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="rohit.html">Rohit Sharma</a>
+    <a href="mumbai.html">Mumbai Indians</a>
+    <a href="stadium.html">Stadium</a>
+    <a href="jamia.html">Jamia</a>
+  </nav>
 </header>
 
-<section class="profile">
+<section class="profile fade-in">
+  <h1>Live Match Score</h1>
+  <p>Latest cricket match information</p>
 
-<h1>Live Match Score</h1>
+  <div class="live-indicator">
+    <span class="dot"></span> LIVE MATCH
+  </div>
 
-<p>Latest cricket match information</p>
-
-<div class="live-indicator">
-<span class="dot"></span> LIVE MATCH
-</div>
-
-<div id="liveScore" class="live-box">
-
-Loading live score...
-
-</div>
-
+  <div id="liveScore" class="live-box">
+    Loading live score...
+  </div>
 </section>
 
-<footer>
-
-
-
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Cricket Universe</h3>
+      <p>A fan website dedicated to Rohit Sharma and the world of cricket.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="rohit.html">Rohit Sharma</a>
+      <a href="mumbai.html">Mumbai Indians</a>
+      <a href="stadium.html">Stadium</a>
+      <a href="jamia.html">Jamia</a>
+      <a href="live.html">Live Match</a>
+    </div>
+    <div class="footer-section">
+      <h3>Project Info</h3>
+      <p>B.Tech Cloud Computing Project</p>
+      <p>Created by: Hannan</p>
+      <p>Year: 2026</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Cricket Universe | Educational Project Only</p>
+  </div>
 </footer>
 
 <script src="liveScore.js"></script>
 <script src="main.js"></script>
 <script src="comment.js"></script>
-
-<footer class="footer">
-
-<div class="footer-container">
-
-<div class="footer-section">
-
-<h3>Cricket Universe</h3>
-
-<p>A fan website dedicated to Rohit Sharma and the world of cricket.</p>
-
-</div>
-
-<div class="footer-section">
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-<a href="rohit.html">Rohit Sharma</a>
-<a href="mumbai.html">Mumbai Indians</a>
-<a href="stadium.html">Stadium</a>
-<a href="jamia.html">Jamia</a>
-
-</div>
-
-<div class="footer-section">
-
-<h3>Project Info</h3>
-
-<p>B.Tech Cloud Computing Project</p>
-<p>Created by: Hannan</p>
-<p>Year: 2026</p>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-
-<p>© 2026 Cricket Universe | Educational Project Only</p>
-
-</div>
-
-</footer>
-
+<script>
+  document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('mainNav').classList.toggle('open');
+  });
+</script>
 </body>
-
 </html>
