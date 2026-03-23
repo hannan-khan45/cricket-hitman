@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Project - AWS Static Website</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #0b1f3a;
+        color: white;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #00c3ff;
+    }
+
+    h2 {
+        color: #ffcc00;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    .box {
+        background: rgba(255,255,255,0.1);
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 10px;
+    }
+
+    .architecture {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 20px;
+        background: rgba(0,0,0,0.4);
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Cloud Based Static Website Hosting Project</h1>
+
+<div class="box">
+    <h2>📌 Project Overview</h2>
+    <p>
+        This project demonstrates how to host a static website using Amazon Web Services (AWS).
+        The website is stored in Amazon S3, delivered globally using CloudFront CDN,
+        secured with HTTPS, and connected to a custom domain using Route 53 and GoDaddy.
+    </p>
+</div>
+
+<div class="box">
+    <h2>🎯 Objectives</h2>
+    <p>
+        The main objective of this project is to build a fast, secure, and scalable website
+        using cloud technologies without managing any servers.
+    </p>
+    <ul>
+        <li>Host website using Amazon S3</li>
+        <li>Improve speed using CloudFront CDN</li>
+        <li>Secure website with HTTPS</li>
+        <li>Connect custom domain using Route 53</li>
+    </ul>
+</div>
+
+<div class="box">
+    <h2>⚙️ Technologies Used</h2>
+    <ul>
+        <li>Amazon S3 (Storage)</li>
+        <li>Amazon CloudFront (CDN)</li>
+        <li>AWS Route 53 (DNS)</li>
+        <li>GoDaddy (Domain Provider)</li>
+        <li>HTML, CSS, JavaScript</li>
+    </ul>
+</div>
+
+<div class="box">
+    <h2>🔐 Security</h2>
+    <p>
+        The S3 bucket is kept private and only accessible through CloudFront using
+        Origin Access Control (OAC). HTTPS is enabled to ensure secure data transmission.
+    </p>
+</div>
+
+<div class="box">
+    <h2>⚡ Features</h2>
+    <ul>
+        <li>Fast global delivery using CDN</li>
+        <li>Serverless architecture</li>
+        <li>Cost-effective hosting</li>
+        <li>Secure HTTPS connection</li>
+    </ul>
+</div>
+
+<div class="box">
+    <h2>📊 Future Improvements</h2>
+    <ul>
+        <li>Integrate live cricket API</li>
+        <li>Add user analytics</li>
+        <li>Improve UI/UX design</li>
+    </ul>
+</div>
+
+<div class="architecture">
+    <strong>Architecture:</strong><br><br>
+    User → Domain → Route 53 → CloudFront → S3
+</div>
+
+</div>
+
+</body>
+</html>
